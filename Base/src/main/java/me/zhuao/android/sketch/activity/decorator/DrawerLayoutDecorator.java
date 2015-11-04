@@ -17,7 +17,7 @@ public class DrawerLayoutDecorator implements ActivityDecorator {
     @Override
     public void onCreate(int containerResId) {
         ViewStub view = (ViewStub) activity.findViewById(containerResId);
-        view.setLayoutResource(R.layout.activity_drawer_layout);
+        view.setLayoutResource(R.layout.decorator_drawer_layout);
         view.inflate();
 
         ViewStub navigationView = ((ViewStub) activity.findViewById(R.id.drawer_navigation));

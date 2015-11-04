@@ -12,7 +12,8 @@ public abstract class DrawerLayoutActivity extends BlankActivity implements Navi
     @Override
     protected ActivityDecorator getActivityDecorator() {
         DrawerLayoutDecorator drawerLayoutDecorator = new DrawerLayoutDecorator(this, getDrawerLayoutResId());
-        return new DrawerLayoutToolbarInsideDecorator(this, drawerLayoutDecorator, new ToolbarDecorator(this));
+        ToolbarDecorator toolbarDecorator = new ToolbarDecorator(this);
+        return new DrawerLayoutToolbarInsideDecorator(this, drawerLayoutDecorator, toolbarDecorator);
     }
 
     protected abstract int getDrawerLayoutResId();

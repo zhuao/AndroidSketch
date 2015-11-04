@@ -19,7 +19,7 @@ public class ToolbarDecorator implements ActivityDecorator {
         ViewStub container = (ViewStub) activity.findViewById(containerResId);
         container.setLayoutResource(R.layout.decorator_toolbar);
         container.inflate();
-
+        inflateToolbar();
     }
 
     @Override
@@ -31,7 +31,6 @@ public class ToolbarDecorator implements ActivityDecorator {
 
     @Override
     public void onPostCreate() {
-        inflateToolbar();
     }
 
     private void inflateToolbar() {

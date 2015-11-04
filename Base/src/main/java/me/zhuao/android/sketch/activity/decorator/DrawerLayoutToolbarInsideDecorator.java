@@ -10,8 +10,8 @@ import me.zhuao.android.sketch.activity.BlankActivity;
 public class DrawerLayoutToolbarInsideDecorator implements ActivityDecorator {
 
     private BlankActivity activity;
-    private final DrawerLayoutDecorator drawerLayoutDecorator;
-    private final ToolbarDecorator toolbarDecorator;
+    protected DrawerLayoutDecorator drawerLayoutDecorator;
+    protected ToolbarDecorator toolbarDecorator;
 
     public DrawerLayoutToolbarInsideDecorator(BlankActivity activity, DrawerLayoutDecorator drawerLayoutDecorator, ToolbarDecorator toolbarDecorator) {
         this.activity = activity;

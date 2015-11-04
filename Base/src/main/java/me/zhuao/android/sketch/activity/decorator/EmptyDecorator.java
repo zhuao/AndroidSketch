@@ -1,6 +1,6 @@
 package me.zhuao.android.sketch.activity.decorator;
 
-public class EmptyDecorator extends ActivityDecorator {
+public class EmptyDecorator implements ActivityDecorator {
     @Override
     public void onCreate(int containerResId) {
 
