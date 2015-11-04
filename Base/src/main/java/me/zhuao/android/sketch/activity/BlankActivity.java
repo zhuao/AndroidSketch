@@ -5,15 +5,14 @@ import android.support.v7.app.AppCompatActivity;
 
 import me.zhuao.android.sketch.R;
 import me.zhuao.android.sketch.activity.decorator.ActivityDecorator;
-import me.zhuao.android.sketch.activity.decorator.EmptyDecorator;
+import me.zhuao.android.sketch.activity.decorator.RootDecorator;
 
 public class BlankActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        super.setContentView(R.layout.activity_blank);
-        getActivityDecorator().onCreate(R.id.root);
+        getActivityDecorator().onCreate(0);
     }
 
     @Override
@@ -28,7 +27,7 @@ public class BlankActivity extends AppCompatActivity {
     }
 
     protected ActivityDecorator getActivityDecorator() {
-        return new EmptyDecorator();
+        return new RootDecorator(this);
     }
 
 }
