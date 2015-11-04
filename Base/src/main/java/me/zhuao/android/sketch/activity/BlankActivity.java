@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import me.zhuao.android.sketch.R;
+import me.zhuao.android.sketch.activity.decorator.ActivityDecorator;
+import me.zhuao.android.sketch.activity.decorator.EmptyDecorator;
 
 public class BlankActivity extends AppCompatActivity {
 
@@ -26,7 +28,7 @@ public class BlankActivity extends AppCompatActivity {
     }
 
     protected ActivityDecorator getActivityDecorator() {
-        return new ActivityDecorator.ActivityEmptyDecorator();
+        return new EmptyDecorator();
     }
 
 }

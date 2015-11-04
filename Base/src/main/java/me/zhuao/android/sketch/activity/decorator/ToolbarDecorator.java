@@ -1,15 +1,16 @@
-package me.zhuao.android.sketch.activity;
+package me.zhuao.android.sketch.activity.decorator;
 
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewStub;
 
 import me.zhuao.android.sketch.R;
+import me.zhuao.android.sketch.activity.BlankActivity;
 
-public class ActivityToolbarDecorator extends ActivityDecorator {
+public class ToolbarDecorator implements ActivityDecorator {
     private BlankActivity activity;
 
-    public ActivityToolbarDecorator(BlankActivity toolbarActivity) {
+    public ToolbarDecorator(BlankActivity toolbarActivity) {
         this.activity = toolbarActivity;
     }
 

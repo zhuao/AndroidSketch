@@ -1,18 +1,19 @@
-package me.zhuao.android.sketch.activity;
+package me.zhuao.android.sketch.activity.decorator;
 
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
 
 import me.zhuao.android.sketch.R;
+import me.zhuao.android.sketch.activity.BlankActivity;
 
-public class DrawerLayoutWrapToolbarDecorator extends ActivityDecorator {
+public class DrawerLayoutToolbarInsideDecorator implements ActivityDecorator {
 
     private BlankActivity activity;
-    private final ActivityDrawerLayoutDecorator drawerLayoutDecorator;
-    private final ActivityToolbarDecorator toolbarDecorator;
+    private final DrawerLayoutDecorator drawerLayoutDecorator;
+    private final ToolbarDecorator toolbarDecorator;
 
-    public DrawerLayoutWrapToolbarDecorator(BlankActivity activity, ActivityDrawerLayoutDecorator drawerLayoutDecorator, ActivityToolbarDecorator toolbarDecorator) {
+    public DrawerLayoutToolbarInsideDecorator(BlankActivity activity, DrawerLayoutDecorator drawerLayoutDecorator, ToolbarDecorator toolbarDecorator) {
         this.activity = activity;
         this.drawerLayoutDecorator = drawerLayoutDecorator;
         this.toolbarDecorator = toolbarDecorator;

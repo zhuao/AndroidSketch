@@ -2,6 +2,7 @@ package me.zhuao.android.sample;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -18,6 +19,15 @@ public class MainActivity extends DrawerLayoutActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.function_lists);
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        NavigationView navigateView = (NavigationView) findViewById(R.id.navigation_main);
+        navigateView.setNavigationItemSelectedListener(this);
+        navigateView.setVisibility(View.VISIBLE);
+
     }
 
     @Override
