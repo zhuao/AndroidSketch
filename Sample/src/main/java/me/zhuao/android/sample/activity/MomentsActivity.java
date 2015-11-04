@@ -4,7 +4,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 
 import me.zhuao.android.sample.R;
-import me.zhuao.android.sketch.ToolbarActivity;
+import me.zhuao.android.sketch.activity.ToolbarActivity;
 
 public class MomentsActivity extends ToolbarActivity {
 

@@ -2,7 +2,6 @@ package me.zhuao.android.sample;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.NavigationView;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -11,7 +10,7 @@ import me.zhuao.android.sample.activity.EditTextActivity;
 import me.zhuao.android.sample.activity.MomentsActivity;
 import me.zhuao.android.sample.activity.SpinnerActivity;
 import me.zhuao.android.sample.activity.StepIndicatorActivity;
-import me.zhuao.android.sketch.DrawerLayoutActivity;
+import me.zhuao.android.sketch.activity.DrawerLayoutActivity;
 
 public class MainActivity extends DrawerLayoutActivity {
 

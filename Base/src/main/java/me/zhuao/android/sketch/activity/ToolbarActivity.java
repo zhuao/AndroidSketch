@@ -1,4 +1,4 @@
-package me.zhuao.android.sketch;
+package me.zhuao.android.sketch.activity;
 
 public class ToolbarActivity extends BlankActivity {
 
@@ -6,7 +6,4 @@ public class ToolbarActivity extends BlankActivity {
     protected ActivityDecorator getActivityDecorator() {
         return new ActivityToolbarDecorator(this);
     }
-
-
-
 }

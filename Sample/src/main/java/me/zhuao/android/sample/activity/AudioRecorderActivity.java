@@ -7,7 +7,7 @@ import android.widget.ListView;
 import java.io.File;
 
 import me.zhuao.android.sample.R;
-import me.zhuao.android.sketch.ToolbarActivity;
+import me.zhuao.android.sketch.activity.ToolbarActivity;
 import me.zhuao.android.sample.audiorecorder.AudioAdapter;
 import me.zhuao.android.sample.audiorecorder.AudioFolderOperator;
 import me.zhuao.android.sample.audiorecorder.AudioPlayerService;
