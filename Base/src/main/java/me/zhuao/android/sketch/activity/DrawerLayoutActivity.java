@@ -18,14 +18,14 @@ public abstract class DrawerLayoutActivity extends ToolbarActivity implements Na
 
     @Override
     protected ActivityDecorator getActivityDecorator() {
-        return new ActivityDrawerLayoutDecorator(this, this, DrawerLayoutActivity.this, getDrawerLayoutResId());
+        return new ActivityDrawerLayoutDecorator(this, DrawerLayoutActivity.this, getDrawerLayoutResId());
     }
 
     protected abstract int getDrawerLayoutResId();
 
     @Override
     public void setContentView(int layoutResID) {
-        ViewStub pageContentView = ((ViewStub) findViewById(R.id.page_content));
+        ViewStub pageContentView = ((ViewStub) findViewById(R.id.drawer_content));
         pageContentView.setLayoutResource(layoutResID);
         pageContentView.inflate().setVisibility(View.VISIBLE);
     }

@@ -22,7 +22,7 @@
     </LinearLayout>
 
     <ViewStub
-        android:id="@+id/navigation"
+        android:id="@+id/drawer_navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start" />

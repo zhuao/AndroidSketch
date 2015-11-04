@@ -31,7 +31,7 @@ public abstract class FullDrawerLayoutActivity extends AppCompatActivity impleme
         }
 
 
-        ViewStub navigationView = ((ViewStub) findViewById(R.id.navigation));
+        ViewStub navigationView = ((ViewStub) findViewById(R.id.drawer_navigation));
         navigationView.setLayoutResource(getDrawerLayoutResId());
         NavigationView view = ((NavigationView) navigationView.inflate());
         view.setItemIconTintList(null);
