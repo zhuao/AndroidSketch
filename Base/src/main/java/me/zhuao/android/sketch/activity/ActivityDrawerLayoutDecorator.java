@@ -10,12 +10,10 @@ import me.zhuao.android.sketch.R;
 
 public class ActivityDrawerLayoutDecorator extends ActivityDecorator {
     private BlankActivity activity;
-    private NavigationView.OnNavigationItemSelectedListener listener;
     private int drawerLayoutResId;
 
-    public ActivityDrawerLayoutDecorator(BlankActivity activity, NavigationView.OnNavigationItemSelectedListener listener, int drawerLayoutResId) {
+    public ActivityDrawerLayoutDecorator(BlankActivity activity, int drawerLayoutResId) {
         this.activity = activity;
-        this.listener = listener;
         this.drawerLayoutResId = drawerLayoutResId;
     }
 
@@ -24,14 +22,14 @@ public class ActivityDrawerLayoutDecorator extends ActivityDecorator {
         ViewStub view = (ViewStub) activity.findViewById(containerResId);
         view.setLayoutResource(R.layout.activity_drawer_layout);
         view.inflate();
+
+        ViewStub navigationView = ((ViewStub) activity.findViewById(R.id.drawer_navigation));
+        navigationView.setLayoutResource(drawerLayoutResId);
+        navigationView.inflate();
     }
 
     @Override
     public void setContentView(int layoutResID) {
-        ViewStub navigationView = ((ViewStub) activity.findViewById(R.id.drawer_navigation));
-        navigationView.setLayoutResource(drawerLayoutResId);
-        navigationView.inflate();
-
         ViewStub content = ((ViewStub) activity.findViewById(R.id.drawer_content));
         content.setLayoutResource(layoutResID);
         content.inflate();
