@@ -14,7 +14,6 @@ public class RootDecorator implements ActivityDecorator {
 
     @Override
     public void onCreate(int containerResId) {
-        activity.setContentView(R.layout.activity_blank);
     }
 
     @Override

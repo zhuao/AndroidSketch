@@ -12,7 +12,8 @@ public class BlankActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivityDecorator().onCreate(0);
+        super.setContentView(R.layout.activity_blank);
+        getActivityDecorator().onCreate(R.id.root);
     }
 
     @Override

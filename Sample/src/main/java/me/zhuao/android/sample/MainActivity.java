@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import me.zhuao.android.sample.activity.AudioRecorderActivity;
+import me.zhuao.android.sample.activity.ButtonActivity;
 import me.zhuao.android.sample.activity.EditTextActivity;
 import me.zhuao.android.sample.activity.MomentsActivity;
 import me.zhuao.android.sample.activity.SpinnerActivity;
@@ -39,6 +40,9 @@ public class MainActivity extends DrawerLayoutActivity {
     public boolean onNavigationItemSelected(MenuItem menuItem) {
         if (menuItem.getItemId() == R.id.navigation_spinner) {
             spinner(null);
+        }
+        if (menuItem.getItemId() == R.id.navigation_button_sample) {
+            startActivity(new Intent(this, ButtonActivity.class));
         }
         return false;
     }
