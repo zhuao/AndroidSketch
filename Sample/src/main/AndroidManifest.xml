@@ -43,6 +43,9 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="AndroidSketch"/>
             </intent-filter>
+            <meta-data
+                android:name="me.zhuao.android.controller.URI_SCHEME"
+                android:value="AndroidSketch" />
         </receiver>
 
     </application>

@@ -19,6 +19,7 @@ public class DispatcherReceiver extends BroadcastReceiver {
         if (view == null) {
             return;
         }
+
         Intent destinationIntent = new Intent(context, view);
         destinationIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         Bundle extras = intent.getExtras();

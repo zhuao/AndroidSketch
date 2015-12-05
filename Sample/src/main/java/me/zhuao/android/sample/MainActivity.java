@@ -1,18 +1,11 @@
 package me.zhuao.android.sample;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.view.MenuItem;
 import android.view.View;
 
 import me.zhuao.android.controller.Navigator;
-import me.zhuao.android.sample.activity.AudioRecorderActivity;
-import me.zhuao.android.sample.activity.ButtonActivity;
-import me.zhuao.android.sample.activity.EditTextActivity;
-import me.zhuao.android.sample.activity.MomentsActivity;
-import me.zhuao.android.sample.activity.SpinnerActivity;
-import me.zhuao.android.sample.activity.StepIndicatorActivity;
 import me.zhuao.android.sketch.activity.DrawerLayoutActivity;
 
 public class MainActivity extends DrawerLayoutActivity {
@@ -43,28 +36,28 @@ public class MainActivity extends DrawerLayoutActivity {
             spinner(null);
         }
         if (menuItem.getItemId() == R.id.navigation_button_sample) {
-            startActivity(new Intent(this, ButtonActivity.class));
+            Navigator.goTo("/button");
         }
         return false;
     }
 
     public void spinner(View view) {
-        Navigator.goTo("AndroidSketch:///spinner");
+        Navigator.goTo("/spinner");
     }
 
     public void text(View view) {
-        startActivity(new Intent(this, EditTextActivity.class));
+        Navigator.goTo("/text");
     }
 
     public void recorder(View view) {
-        startActivity(new Intent(this, AudioRecorderActivity.class));
+        Navigator.goTo("/audio");
     }
 
     public void moments(View view) {
-        startActivity(new Intent(this, MomentsActivity.class));
+        Navigator.goTo("/moments");
     }
 
     public void stepIndicator(View view) {
-        startActivity(new Intent(this, StepIndicatorActivity.class));
+        Navigator.goTo("/indicator");
     }
 }
