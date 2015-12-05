@@ -9,7 +9,7 @@
     <!--
         Sets the application's user-readable label
      -->
-    <application android:label="@string/app_name" android:theme="@style/App.BaseTheme">
+    <application android:name=".SampleApplication" android:label="@string/app_name" android:theme="@style/App.BaseTheme">
         <!--
             Sets the activity's name and label
          -->
@@ -35,6 +35,15 @@
 
         <activity android:name=".activity.ButtonActivity"
             android:label="@string/title_activity_button"/>
+
+        <receiver android:name="me.zhuao.android.controller.DispatcherReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="AndroidSketch"/>
+            </intent-filter>
+        </receiver>
 
     </application>
 

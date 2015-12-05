@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 dependencies {
     compile project(':Base')
     compile project(':View:StepIndicator')
+    compile project(':Lib:Controller')
 
     compile 'com.jakewharton:butterknife:6.1.0'
 

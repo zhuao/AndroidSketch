@@ -6,6 +6,7 @@ import android.support.design.widget.NavigationView;
 import android.view.MenuItem;
 import android.view.View;
 
+import me.zhuao.android.controller.Navigator;
 import me.zhuao.android.sample.activity.AudioRecorderActivity;
 import me.zhuao.android.sample.activity.ButtonActivity;
 import me.zhuao.android.sample.activity.EditTextActivity;
@@ -48,7 +49,7 @@ public class MainActivity extends DrawerLayoutActivity {
     }
 
     public void spinner(View view) {
-        startActivity(new Intent(this, SpinnerActivity.class));
+        Navigator.goTo("AndroidSketch:///spinner");
     }
 
     public void text(View view) {

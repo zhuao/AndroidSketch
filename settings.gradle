@@ -1,3 +1,4 @@
 include ':Base', ':AutomatedTest'
 include ':Sample'
 include ':View:StepIndicator'
+include ':Lib:Controller'

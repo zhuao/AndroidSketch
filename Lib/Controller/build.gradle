@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+
+    compile "com.android.support:support-v4:" + androidSupportVersion
+    compile "com.android.support:appcompat-v7:" + androidSupportVersion
+
+}
+
+android {
+    compileSdkVersion appTargetSDKVersion.toInteger()
+    buildToolsVersion appBuildToolVersion
+
+    defaultConfig {
+        minSdkVersion appMinSDKVersion.toInteger()
+        targetSdkVersion appTargetSDKVersion.toInteger()
+    }
+}
