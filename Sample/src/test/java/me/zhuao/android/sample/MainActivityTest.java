@@ -7,16 +7,15 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
-import org.robolectric.RuntimeEnvironment;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadows.ShadowApplication;
 
-import me.zhuao.android.sample.activity.StepIndicatorActivity;
+import java.util.List;
 
 import static org.assertj.android.api.Assertions.assertThat;
 
 @RunWith(RobolectricGradleTestRunner.class)
-@Config(constants = BuildConfig.class, sdk=21)
+@Config(constants = BuildConfig.class, sdk=21, application = SampleApplication.class)
 public class MainActivityTest {
 
     private MainActivity mainActivity;
@@ -29,8 +28,9 @@ public class MainActivityTest {
 
         stepIndicatorButton.performClick();
 
-        Intent nextStartedActivity = ShadowApplication.getInstance().getNextStartedActivity();
-        assertThat(nextStartedActivity).hasComponent(RuntimeEnvironment.application.getPackageName(), StepIndicatorActivity.class);
+        List<Intent> nextStartedActivity = ShadowApplication.getInstance().getBroadcastIntents();
+
+        assert(nextStartedActivity.get(0).getData().toString()).equals("AndroidSketch:///indicator");
     }
 
 }
