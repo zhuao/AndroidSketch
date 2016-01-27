@@ -5,24 +5,22 @@ dependencies {
     compile project(':View:StepIndicator')
     compile project(':Lib:Controller')
 
-    compile 'com.jakewharton:butterknife:' + libVersion.butterknife
+    compile libDependencies.butterknife
 
-
-    testCompile 'org.mockito:mockito-all:1.10.19'
-    testCompile 'junit:junit:4.12'
-    testCompile ("com.squareup.assertj:assertj-android:1.0.0") {
-        exclude group: 'com.android.support', module:'support-annotations'
-    }
-    testCompile 'org.robolectric:robolectric:' + libVersion.robolectric
+    testCompile androidUnitTestDependencies.mockito
+    testCompile androidUnitTestDependencies.junit
+    testCompile("com.squareup.assertj:assertj-android:${TestVersion.assertAndroid}")
+            { exclude group: "com.android.support", module: "support-annotations" }
+    testCompile androidUnitTestDependencies.robolectric
 }
 
 android {
-    compileSdkVersion appTargetSDKVersion
-    buildToolsVersion appBuildToolVersion
+    compileSdkVersion AndroidVersion.targetSDK
+    buildToolsVersion AndroidVersion.buildTool
 
     defaultConfig {
-        minSdkVersion appMinSDKVersion
-        targetSdkVersion appTargetSDKVersion
+        minSdkVersion AndroidVersion.minSDK
+        targetSdkVersion AndroidVersion.targetSDK
     }
 
     signingConfigs {

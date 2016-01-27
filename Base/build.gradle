@@ -4,25 +4,24 @@ dependencies {
 
     compile fileTree("libs")
 
-    compile "com.android.support:support-v4:" + androidSupportVersion
-    compile "com.android.support:appcompat-v7:" + androidSupportVersion
-    compile "com.android.support:design:" + androidSupportVersion
+    compile androidLibDependencies.supportV4
+    compile androidLibDependencies.appcompatV7
+    compile androidLibDependencies.design
 
-    testCompile 'org.mockito:mockito-all:1.10.19'
-    testCompile 'junit:junit:4.12'
-    testCompile ("com.squareup.assertj:assertj-android:1.0.0") {
-        exclude group: 'com.android.support', module:'support-annotations'
-    }
-    testCompile 'org.robolectric:robolectric:3.0'
+    testCompile androidUnitTestDependencies.mockito
+    testCompile androidUnitTestDependencies.junit
+    testCompile("com.squareup.assertj:assertj-android:${TestVersion.assertAndroid}")
+            { exclude group: "com.android.support", module: "support-annotations" }
+    testCompile androidUnitTestDependencies.robolectric
 }
 
 android {
-    compileSdkVersion appTargetSDKVersion.toInteger()
-    buildToolsVersion appBuildToolVersion
+    compileSdkVersion AndroidVersion.targetSDK
+    buildToolsVersion AndroidVersion.buildTool
 
     defaultConfig {
-        minSdkVersion appMinSDKVersion.toInteger()
-        targetSdkVersion appTargetSDKVersion.toInteger()
+        minSdkVersion AndroidVersion.minSDK
+        targetSdkVersion AndroidVersion.targetSDK
     }
 }
 

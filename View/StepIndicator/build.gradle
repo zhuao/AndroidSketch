@@ -4,12 +4,12 @@ dependencies {
 }
 
 android {
-    compileSdkVersion appTargetSDKVersion.toInteger()
-    buildToolsVersion appBuildToolVersion
+    compileSdkVersion AndroidVersion.targetSDK
+    buildToolsVersion AndroidVersion.buildTool
 
     defaultConfig {
-        minSdkVersion appMinSDKVersion.toInteger()
-        targetSdkVersion appTargetSDKVersion.toInteger()
+        minSdkVersion AndroidVersion.minSDK
+        targetSdkVersion AndroidVersion.targetSDK
     }
 
 }
