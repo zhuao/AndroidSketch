@@ -1,9 +1,9 @@
-package me.zhuao.android.sketch.activity.decorator;
+package me.zhuao.android.sketch.ui.decorator;
 
 import android.view.ViewStub;
 
 import me.zhuao.android.sketch.R;
-import me.zhuao.android.sketch.activity.BlankActivity;
+import me.zhuao.android.sketch.ui.BlankActivity;
 
 public class RootDecorator implements ActivityDecorator {
     private BlankActivity activity;

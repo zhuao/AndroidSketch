@@ -1,11 +1,11 @@
-package me.zhuao.android.sketch.activity;
+package me.zhuao.android.sketch.ui;
 
 import android.support.design.widget.NavigationView;
 
-import me.zhuao.android.sketch.activity.decorator.ActivityDecorator;
-import me.zhuao.android.sketch.activity.decorator.DrawerLayoutDecorator;
-import me.zhuao.android.sketch.activity.decorator.RootDecorator;
-import me.zhuao.android.sketch.activity.decorator.ToolbarDecorator;
+import me.zhuao.android.sketch.ui.decorator.ActivityDecorator;
+import me.zhuao.android.sketch.ui.decorator.DrawerLayoutDecorator;
+import me.zhuao.android.sketch.ui.decorator.RootDecorator;
+import me.zhuao.android.sketch.ui.decorator.ToolbarDecorator;
 
 public abstract class DrawerLayoutActivity extends BlankActivity implements NavigationView.OnNavigationItemSelectedListener {
 

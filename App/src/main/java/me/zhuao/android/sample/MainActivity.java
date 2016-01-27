@@ -6,7 +6,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import me.zhuao.android.controller.Navigator;
-import me.zhuao.android.sketch.activity.DrawerLayoutActivity;
+import me.zhuao.android.sketch.ui.DrawerLayoutActivity;
 
 public class MainActivity extends DrawerLayoutActivity {
 
@@ -43,6 +43,9 @@ public class MainActivity extends DrawerLayoutActivity {
 
     public void spinner(View view) {
         Navigator.goTo("/spinner");
+    }
+    public void todo(View view) {
+        Navigator.goTo("/todo");
     }
 
     public void text(View view) {

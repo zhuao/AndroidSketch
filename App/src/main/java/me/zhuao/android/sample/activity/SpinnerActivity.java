@@ -25,7 +25,7 @@ import android.widget.*;
 import android.widget.AdapterView.OnItemSelectedListener;
 
 import me.zhuao.android.sample.R;
-import me.zhuao.android.sketch.activity.ToolbarActivity;
+import me.zhuao.android.sketch.ui.ToolbarActivity;
 
 
 /**

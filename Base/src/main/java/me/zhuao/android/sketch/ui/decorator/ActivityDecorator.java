@@ -1,6 +1,6 @@
-package me.zhuao.android.sketch.activity.decorator;
+package me.zhuao.android.sketch.ui.decorator;
 
-import me.zhuao.android.sketch.activity.BlankActivity;
+import me.zhuao.android.sketch.ui.BlankActivity;
 
 public interface ActivityDecorator {
     void onCreate(int containerResId);

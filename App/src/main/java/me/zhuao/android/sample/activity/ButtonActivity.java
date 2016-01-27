@@ -3,7 +3,7 @@ package me.zhuao.android.sample.activity;
 import android.os.Bundle;
 
 import me.zhuao.android.sample.R;
-import me.zhuao.android.sketch.activity.ToolbarActivity;
+import me.zhuao.android.sketch.ui.ToolbarActivity;
 
 public class ButtonActivity extends ToolbarActivity {
 

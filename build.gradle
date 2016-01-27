@@ -21,5 +21,10 @@ allprojects {
         appTargetSDKVersion=23
         appBuildToolVersion = "23.0.2"
         androidSupportVersion= "23.1.0"
+
+        libVersion = [
+            butterknife:"6.1.0",
+            robolectric:"3.0"
+        ]
     }
 }

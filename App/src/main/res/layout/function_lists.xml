@@ -8,8 +8,8 @@
         android:id="@+id/function_list_spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:onClick="spinner"
-        android:text="Spinner" />
+        android:onClick="todo"
+        android:text="Todo" />
 
     <Button
         android:id="@+id/function_list_input"

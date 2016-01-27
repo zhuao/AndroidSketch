@@ -1,14 +1,12 @@
-package me.zhuao.android.sketch.activity.decorator;
+package me.zhuao.android.sketch.ui.decorator;
 
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.View;
 import android.view.ViewStub;
 
 import me.zhuao.android.sketch.R;
-import me.zhuao.android.sketch.activity.BlankActivity;
+import me.zhuao.android.sketch.ui.BlankActivity;
 
 public class DrawerLayoutDecorator implements ActivityDecorator {
     private int drawerLayoutResId;

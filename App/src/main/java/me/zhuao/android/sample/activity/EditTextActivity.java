@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import me.zhuao.android.sample.R;
-import me.zhuao.android.sketch.activity.ToolbarActivity;
+import me.zhuao.android.sketch.ui.ToolbarActivity;
 
 
 public class EditTextActivity extends ToolbarActivity {

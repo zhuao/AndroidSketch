@@ -9,7 +9,7 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
 
-import me.zhuao.android.sketch.activity.ToolbarActivity;
+import me.zhuao.android.sketch.ui.ToolbarActivity;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

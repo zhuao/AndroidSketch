@@ -9,6 +9,7 @@ import me.zhuao.android.sample.activity.EditTextActivity;
 import me.zhuao.android.sample.activity.MomentsActivity;
 import me.zhuao.android.sample.activity.SpinnerActivity;
 import me.zhuao.android.sample.activity.StepIndicatorActivity;
+import me.zhuao.android.sample.activity.TodoActivity;
 
 public class SampleApplication extends Application {
 
@@ -17,6 +18,7 @@ public class SampleApplication extends Application {
         super.onCreate();
         Navigator.init(getApplicationContext());
         Navigator.map("/spinner", SpinnerActivity.class);
+        Navigator.map("/todo", TodoActivity.class);
         Navigator.map("/button", ButtonActivity.class);
         Navigator.map("/text", EditTextActivity.class);
         Navigator.map("/audio", AudioRecorderActivity.class);

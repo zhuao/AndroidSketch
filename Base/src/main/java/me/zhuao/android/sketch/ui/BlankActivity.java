@@ -1,11 +1,11 @@
-package me.zhuao.android.sketch.activity;
+package me.zhuao.android.sketch.ui;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import me.zhuao.android.sketch.R;
-import me.zhuao.android.sketch.activity.decorator.ActivityDecorator;
-import me.zhuao.android.sketch.activity.decorator.RootDecorator;
+import me.zhuao.android.sketch.ui.decorator.ActivityDecorator;
+import me.zhuao.android.sketch.ui.decorator.RootDecorator;
 
 public class BlankActivity extends AppCompatActivity {
 
