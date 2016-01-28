@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.0.0-alpha6'
+        classpath 'com.android.tools.build:gradle:2.0.0-alpha8'
     }
 }
 
@@ -53,6 +53,7 @@ ext {
             mockito: "org.mockito:mockito-all:${TestVersion.mockito}",
             junit: "junit:junit:${TestVersion.junit}",
 //            assertAndroid : "(\"com.squareup.assertj:assertj-android:${TestVersion.assertAndroid}\") { exclude group: \"com.android.support\", module:\"support-annotations\"}",
-            robolectric: "org.robolectric:robolectric:${TestVersion.robolectric}"
+            robolectric: "org.robolectric:robolectric:${TestVersion.robolectric}",
+            shadowMultidex: "org.robolectric:shadows-multidex:${TestVersion.robolectric}"
     ]
 }

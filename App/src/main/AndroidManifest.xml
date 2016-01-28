@@ -35,7 +35,8 @@
 
         <activity android:name=".activity.ButtonActivity"
             android:label="@string/title_activity_button"/>
-
+        <activity android:name=".activity.TodoActivity"
+            android:label="@string/title_activity_todo"/>
         <receiver android:name="me.zhuao.android.controller.DispatcherReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>

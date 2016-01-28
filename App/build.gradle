@@ -12,6 +12,7 @@ dependencies {
     testCompile("com.squareup.assertj:assertj-android:${TestVersion.assertAndroid}")
             { exclude group: "com.android.support", module: "support-annotations" }
     testCompile androidUnitTestDependencies.robolectric
+    testCompile androidUnitTestDependencies.shadowMultidex
 }
 
 android {
@@ -21,6 +22,11 @@ android {
     defaultConfig {
         minSdkVersion AndroidVersion.minSDK
         targetSdkVersion AndroidVersion.targetSDK
+
+        versionCode appVersionCode.toInteger()
+        versionName appSemanticVersion
+
+        multiDexEnabled true
     }
 
     signingConfigs {
