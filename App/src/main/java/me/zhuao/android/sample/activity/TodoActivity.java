@@ -1,6 +1,7 @@
 package me.zhuao.android.sample.activity;
 
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.LayoutInflater;
@@ -28,6 +29,7 @@ public class TodoActivity extends ToolbarActivity{
     @Override
     protected void onStart() {
         super.onStart();
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new TodoItemsAdapter());
     }
 
@@ -44,7 +46,7 @@ public class TodoActivity extends ToolbarActivity{
         }
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.todo_item, parent);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.todo_item, parent, false);
             return new TodoItemViewHolder(view);
         }
 
