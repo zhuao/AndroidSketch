@@ -6,6 +6,10 @@ dependencies {
     compile project(':Lib:Controller')
 
     compile libDependencies.butterknife
+    compile libDependencies.rxAndroid
+    compile libDependencies.retrofit
+    compile libDependencies.retrofitGson
+    compile libDependencies.retrofitRx
 
     testCompile androidUnitTestDependencies.mockito
     testCompile androidUnitTestDependencies.junit

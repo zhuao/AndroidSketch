@@ -29,7 +29,9 @@ ext {
     ]
 
     LibVersion = [
-            butterknife:"6.1.0"
+        butterknife: "6.1.0",
+        rxAndroid  : "1.1.0",
+        retrofit   : "2.0.0-beta3"
     ]
 
     TestVersion = [
@@ -47,6 +49,10 @@ ext {
 
     libDependencies = [
             butterknife: "com.jakewharton:butterknife:${LibVersion.butterknife}",
+            rxAndroid: "io.reactivex:rxandroid:${LibVersion.rxAndroid}",
+            retrofit: "com.squareup.retrofit2:retrofit:${LibVersion.retrofit}",
+            retrofitGson: "com.squareup.retrofit2:converter-gson:${LibVersion.retrofit}",
+            retrofitRx: "com.squareup.retrofit2:adapter-rxjava:${LibVersion.retrofit}",
     ]
 
     androidUnitTestDependencies = [
