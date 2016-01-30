@@ -6,6 +6,7 @@ dependencies {
     compile project(':Lib:Controller')
 
     compile libDependencies.butterknife
+    //TODO: Investigate how to use libs, such as RxLifecycle, RxBinding, to help understand RxAndroid
     compile libDependencies.rxAndroid
     compile libDependencies.retrofit
     compile libDependencies.retrofitGson
