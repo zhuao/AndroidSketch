@@ -37,7 +37,8 @@ public class HttpRepository {
 
         Retrofit retrofit = new Retrofit.Builder()
                 //TODO: Extract to config
-                .baseUrl("https://api.bmob.cn/1/")
+                .baseUrl("http://localhost:3000")
+//                .baseUrl("https://api.bmob.cn/1/")
                 .client(okHttpClient)
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
