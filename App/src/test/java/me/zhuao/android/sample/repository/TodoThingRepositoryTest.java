@@ -10,6 +10,7 @@ import org.robolectric.annotation.Config;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.InetAddress;
+import java.net.URI;
 import java.util.List;
 
 import me.zhuao.android.sample.BuildConfig;
@@ -32,7 +33,8 @@ public class TodoThingRepositoryTest {
 
     @Before
     public void setUp() throws Exception {
-        server.start(InetAddress.getByName("localhost"), 3000);
+        URI uri = URI.create(BuildConfig.HTTP_SERVER_HOST);
+        server.start(InetAddress.getByName(uri.getHost()), uri.getPort() == -1 ? 0 : uri.getPort());
     }
 
     @Test

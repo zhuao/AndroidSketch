@@ -44,11 +44,27 @@ android {
         }
     }
 
+    productFlavors {
+        dev {
+
+        }
+
+        production {
+
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
+        }
+
+        applicationVariants.all { variant ->
+            apply from: "config/" + variant.flavorName + '.gradle'
+
+            buildConfigField "String", "HTTP_SERVER_HOST", "\"${HTTP_SERVER_HOST}\""
         }
     }
 }

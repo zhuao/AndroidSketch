@@ -3,6 +3,7 @@ package me.zhuao.android.sample.repository;
 import java.io.IOException;
 import java.util.List;
 
+import me.zhuao.android.sample.BuildConfig;
 import me.zhuao.android.sample.domain.TodoThing;
 import me.zhuao.android.sample.repository.http.HttpInterface;
 import me.zhuao.android.sample.repository.http.UnwrapResponseFunc;
@@ -37,8 +38,7 @@ public class HttpRepository {
 
         Retrofit retrofit = new Retrofit.Builder()
                 //TODO: Extract to config
-                .baseUrl("http://localhost:3000")
-//                .baseUrl("https://api.bmob.cn/1/")
+                .baseUrl(BuildConfig.HTTP_SERVER_HOST)
                 .client(okHttpClient)
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
