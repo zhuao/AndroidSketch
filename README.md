@@ -1,13 +1,17 @@
 AndroidSketch
 =============
-Android application project template.
+This is an Android template application project. In this project, you could get an batch of good practises on enterprise Android application by implementing an Todo App.
 
-Intgerate open source third part library with our project. Build test framework.
+The good practises include following:
 
-* Robolectric
-* Calabash
+* Write unit test with Robolectric
+* BDD with Appium in Cucumber & Java
+* Learn How to apply MVP into project (Doing)
+* Learn the clean Android application clean architecture (Doing)
+* Integrate RxAndroid into application
 
-It's fixed after gradle plugin 1.1.0
+Prequistist
+
 Note: Run Unit Test in Mac
 need to configure the working directory to the module. `Defaults -> JUnit` and changing the working directory value to `$MODULE_DIR$`
 
