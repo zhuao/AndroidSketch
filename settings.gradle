@@ -1,4 +1,4 @@
-include ':Base', ':AutomatedTest', ':FunctionalTest'
+include ':Base', ':AutomatedTest'
 include ':App'
 include ':View:StepIndicator'
 include ':Lib:Controller'
