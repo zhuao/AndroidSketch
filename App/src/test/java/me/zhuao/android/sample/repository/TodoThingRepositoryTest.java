@@ -19,6 +19,7 @@ import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
 
 
 @RunWith(RobolectricGradleTestRunner.class)
@@ -33,6 +34,7 @@ public class TodoThingRepositoryTest {
 
     @Before
     public void setUp() throws Exception {
+        mock(TodoThing.class);
         URI uri = URI.create(BuildConfig.HTTP_SERVER_HOST);
         server.start(InetAddress.getByName(uri.getHost()), uri.getPort() == -1 ? 0 : uri.getPort());
     }
