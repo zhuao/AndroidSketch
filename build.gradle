@@ -21,7 +21,7 @@ ext {
     AndroidVersion = [
         minSDK : 14,
         targetSDK : 23,
-        buildTool : "23.0.2"
+        buildTool : "24"
     ]
 
     AndroidLibVersion = [
