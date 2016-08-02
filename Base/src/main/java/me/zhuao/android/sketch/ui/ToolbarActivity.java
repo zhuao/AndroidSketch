@@ -10,4 +10,6 @@ public class ToolbarActivity extends BlankActivity {
     protected ActivityDecorator getActivityDecorator() {
         return new ToolbarDecorator(new RootDecorator(this));
     }
+
+
 }
