@@ -25,7 +25,7 @@ ext {
     ]
 
     AndroidLibVersion = [
-        support:"23.1.0",
+        support:"24.0.0",
     ]
 
     LibVersion = [

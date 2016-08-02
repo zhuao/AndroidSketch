@@ -5,6 +5,8 @@ dependencies {
     compile project(':View:StepIndicator')
     compile project(':Lib:Controller')
 
+    compile androidLibDependencies.design
+
     compile libDependencies.butterknife
     //TODO: Investigate how to use libs, such as RxLifecycle, RxBinding, to help understand RxAndroid
     compile libDependencies.rxAndroid
