@@ -1,4 +1,4 @@
-package me.zhuao.android.sketch.ui.decorator;
+package me.zhuao.android.sketch.baseactivity.decorator;
 
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -6,8 +6,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewStub;
 
-import me.zhuao.android.sketch.R;
-import me.zhuao.android.sketch.ui.BlankActivity;
+import me.zhuao.android.baseactivity.R;
+import me.zhuao.android.sketch.baseactivity.BlankActivity;
 
 public class ToolbarDecorator implements ActivityDecorator {
     private ActivityDecorator parentDecorator;

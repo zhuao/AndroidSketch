@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile project(':Base')
+    compile project(':Lib:BaseActivity')
     compile project(':View:StepIndicator')
     compile project(':Lib:Controller')
 

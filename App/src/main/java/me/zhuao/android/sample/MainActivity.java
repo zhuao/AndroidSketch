@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import me.zhuao.android.controller.Navigator;
-import me.zhuao.android.sketch.ui.ToolbarActivity;
+import me.zhuao.android.sketch.baseactivity.ToolbarActivity;
 
 public class MainActivity extends ToolbarActivity {
 

@@ -1,4 +1,4 @@
-package me.zhuao.android.sketch;
+package me.zhuao.android.baseactivity;
 
 import org.junit.runners.model.InitializationError;
 import org.robolectric.RobolectricTestRunner;

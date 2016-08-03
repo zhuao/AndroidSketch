@@ -1,4 +1,4 @@
-package me.zhuao.android.sketch;
+package me.zhuao.android.baseactivity;
 
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -9,7 +9,7 @@ import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
 
-import me.zhuao.android.sketch.ui.ToolbarActivity;
+import me.zhuao.android.sketch.baseactivity.ToolbarActivity;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

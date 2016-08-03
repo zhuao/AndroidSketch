@@ -5,7 +5,7 @@ import android.os.Bundle;
 import butterknife.ButterKnife;
 import me.zhuao.android.sample.R;
 import me.zhuao.android.sample.presenter.TodoListPresenter;
-import me.zhuao.android.sketch.ui.ToolbarActivity;
+import me.zhuao.android.sketch.baseactivity.ToolbarActivity;
 
 public class TodoActivity extends ToolbarActivity{
 
