@@ -12,4 +12,5 @@ android {
         targetSdkVersion AndroidVersion.targetSDK
     }
 
+    buildToolsVersion '26.0.2'
 }

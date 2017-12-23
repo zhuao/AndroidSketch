@@ -46,12 +46,16 @@ android {
         }
     }
 
+    flavorDimensions "full"
+
     productFlavors {
         dev {
+            dimension "full"
 
         }
 
         production {
+            dimension "full"
 
         }
     }
@@ -69,4 +73,5 @@ android {
             buildConfigField "String", "HTTP_SERVER_HOST", "\"${HTTP_SERVER_HOST}\""
         }
     }
+    buildToolsVersion '26.0.2'
 }
